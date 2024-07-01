@@ -316,7 +316,7 @@ async def batch_link(_, message):
         return
     
     try:     
-        data = await db.get_data(user_id)
+        data = await db2.get_data(user_id)
         
         if data and data.get("session"):
             session = data.get("session")
